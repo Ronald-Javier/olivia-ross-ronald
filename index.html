@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Intro Bootstrap</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero text-light text-right pt-5 mt-5">
+    <div class="container">
+      <h1 class="display-1 font-weight-bold my-5">Comidas del fin del mundo</h1>
+      <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#work" class="btn btn-outline-info btn-lg mr-4">Trabajos</a>
+      <a href="#contact" class="btn btn-info btn-lg">Contacto</a>
+    </div>
+  </header>
+  <carrusel>
+    <div class='container'>
+      <div class="row mt-5">
+        <div class="col-sm-4 text-right pt-4">
+          <h3 class="display-5 font-weight-bold">Me haz visto en:</h3>
+        </div>
+        <div class="col-sm-8">
+          <div id="carouselExampleIndicators" class="carousel slide bg-dark rounded" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active py-4">
+                <div class="row text-center">
+                  <div class="col-3">
+                    <i class="fab fa-apple fa-2x text-white"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fab fa-apple fa-2x text-white"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fab fa-apple fa-2x text-white"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fab fa-apple fa-2x text-white"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item py-4">
+                <div class="row text-center">
+                  <div class="col-3">
+                    <i class="fab fa-github-square fa-2x text-white"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fab fa-github-square fa-2x text-white"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fab fa-github-square fa-2x text-white"></i>
+                  </div>
+                  <div class="col-3">
+                    <i class="fab fa-github-square fa-2x text-white"></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+      </div>
+  </carrusel>
+  <section id="about" class="container text-center my-5">
+    <h2 class="display-3">Acerca de Mi</h2>
+    <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, doloribus reiciendis ducimus laudantium error vel voluptas velit omnis libero suscipit et amet ullam qui tempora consectetur ratione blanditiis sapiente iusto?</p>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <i class="fas fa-camera fa-3x my-3"></i>
+          <h3 class="my-3">Fotógrafa de comida</h3>
+          <p class="my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est esse consequuntur obcaecati ullam cumque doloremque reiciendis fuga. Aliquid quae quis, esse labore dolore nemo assumenda? Pariatur, autem harum! Doloribus, minima.</p>
+        </div>
+        <div class="col">
+          <i class="fas fa-bullhorn fa-3x my-3"></i>
+          <h3 class="my-3">Crítica culinaria</h3>
+          <p class="my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est esse consequuntur obcaecati ullam cumque doloremque reiciendis fuga. Aliquid quae quis, esse labore dolore nemo assumenda? Pariatur, autem harum! Doloribus, minima.</p>
+        </div>
+        <div class="col">
+          <i class="far fa-map fa-3x my-3"></i>
+          <h3 class="my-3">Bloggera de viajes</h3>
+          <p class="my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est esse consequuntur obcaecati ullam cumque doloremque reiciendis fuga. Aliquid quae quis, esse labore dolore nemo assumenda? Pariatur, autem harum! Doloribus, minima.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container-fluid my -5 p -5 bg-info" id="work">
+    <h2 class="display-4 text-center font-weight-bold text-light mb-3 my-5">Mis Trabajos</h2>
+    <div class="card-deck m-5">
+      <div class="card">
+        <img src="./assets/img/card-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Asado en la Patagonia</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim id praesentium placeat temporibus! Commodi unde asperiores qui, voluptate accusamus nesciunt similique placeat esse earum a ducimus natus omnis, iure atque!</p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">Info</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/img/card-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Papas del fin del mundo</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis iure perspiciatis ratione at fugiat animi! Doloremque laudantium, animi cumque voluptatum dolore illum aspernatur, non porro sapiente neque iusto reiciendis!</p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal2">Info</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/img/card-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Salmones de Alaska</h5>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit corporis ratione nemo repellat possimus voluptatibus, incidunt aliquid. Ut repudiandae voluptatem repellat, vel voluptatibus, minus non dicta autem eaque, pariatur a!</p>
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal3">Info</button>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+  <section class="container my-5">
+    <h2 class="text-center">Contacto</h2>
+    <div class="typeform-widget" data-url="https://ronaldflorez.typeform.com/to/OSLfl7" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=OSLfl7&utm_source=typeform.com-15192964-Free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+  </section>
+  <footer class="bg-dark text-center text-light p-3">
+    <p>Olivia Ros 2019. Todos los derechos reservados.</p>
+  </footer>
+  <modals>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Asado en la Patagonia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/img/card-1.jpg" class="img-fluid" alt="Responsive image">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, magni exercitationem! Atque repellendus earum maxime sint porro neque, soluta quam corrupti incidunt, qui quis, consectetur amet. Placeat tempore culpa aperiam.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Papas del fin del mundo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/img/card-2.jpg" class="img-fluid" alt="Responsive image">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium laudantium impedit unde hic? Maxime cumque, odio similique ex, et natus libero laudantium corporis veritatis provident tenetur mollitia enim corrupti aliquam!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Salmones de Alaska</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/img/card-3.jpg" class="img-fluid" alt="Responsive image">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dignissimos recusandae et corrupti soluta. Voluptatum dignissimos natus similique fugit quisquam, recusandae quo facilis, dolorum, error aperiam deserunt sapiente sit. Tempora.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </modals>
+  
+</body>
+</html>
